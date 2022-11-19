@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="https://www.fontstatic.com/f=hanimation" />
     <link href="//db.onlinewebfonts.com/c/66108f52b32320faf592153ea557ef07?family=DIN+Next+LT+Arabic" rel="stylesheet" type="text/css"/>
-
-
+    <link
+  rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <title>بياناتي</title>
 </head>
 <body>
@@ -19,12 +19,14 @@
     <main>
         <div class="m1">
             <img src="images/my.jpg" alt="" width="350px">
-            <div class="contant">
+            <div class="contant" >
+                <div >
                 <p><span>أسمي أحمد مصطفي محمد</span> 
         خريج كلية تربيه نوعية قسم تكنولوجيا
                 <span>تقدير عام جيد جدا معا مرتبة الشرف</span>
+            </div>
                 <div class="icon">
-                </p>
+                </p>   
                    <a href="http://" target="_blank" rel="noopener noreferrer">
                     <i class="fa-brands fa-behance fa-xl"></i></a>
                     <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github fa-xl"></i></a>
@@ -44,17 +46,9 @@
         </div>
     </main>
 
-    <nav >
+    <nav id="projects-nav" >
         <a href="#">المشاريع</a>
     </nav>
-<!--     
-    <section class="projects">
-        <div class="card">
-            <img src="images/large.jpg" alt="" width="200px" height="300px">
-
-            <p>مشروع عن...</p
-        </div>
-    </section> -->
     <section class="projects">
     <div class="body-card2" id="card2">
         <div class="card2">
@@ -94,21 +88,75 @@
         </div>
     </div>
 </section>
-<nav class="desgin">
-    <a href="#">تصميمات</a>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1d3557" fill-opacity="1" d="M0,224L8.6,186.7C17.1,149,34,75,51,74.7C68.6,75,86,149,103,181.3C120,213,137,203,154,218.7C171.4,235,189,277,206,277.3C222.9,277,240,235,257,181.3C274.3,128,291,64,309,69.3C325.7,75,343,149,360,176C377.1,203,394,181,411,197.3C428.6,213,446,267,463,250.7C480,235,497,149,514,128C531.4,107,549,149,566,149.3C582.9,149,600,107,617,85.3C634.3,64,651,64,669,101.3C685.7,139,703,213,720,202.7C737.1,192,754,96,771,85.3C788.6,75,806,149,823,160C840,171,857,117,874,122.7C891.4,128,909,192,926,202.7C942.9,213,960,171,977,165.3C994.3,160,1011,192,1029,197.3C1045.7,203,1063,181,1080,186.7C1097.1,192,1114,224,1131,245.3C1148.6,267,1166,277,1183,250.7C1200,224,1217,160,1234,122.7C1251.4,85,1269,75,1286,80C1302.9,85,1320,107,1337,128C1354.3,149,1371,171,1389,181.3C1405.7,192,1423,192,1431,192L1440,192L1440,0L1431.4,0C1422.9,0,1406,0,1389,0C1371.4,0,1354,0,1337,0C1320,0,1303,0,1286,0C1268.6,0,1251,0,1234,0C1217.1,0,1200,0,1183,0C1165.7,0,1149,0,1131,0C1114.3,0,1097,0,1080,0C1062.9,0,1046,0,1029,0C1011.4,0,994,0,977,0C960,0,943,0,926,0C908.6,0,891,0,874,0C857.1,0,840,0,823,0C805.7,0,789,0,771,0C754.3,0,737,0,720,0C702.9,0,686,0,669,0C651.4,0,634,0,617,0C600,0,583,0,566,0C548.6,0,531,0,514,0C497.1,0,480,0,463,0C445.7,0,429,0,411,0C394.3,0,377,0,360,0C342.9,0,326,0,309,0C291.4,0,274,0,257,0C240,0,223,0,206,0C188.6,0,171,0,154,0C137.1,0,120,0,103,0C85.7,0,69,0,51,0C34.3,0,17,0,9,0L0,0Z"></path></svg>
+
+<nav>
+    <a href="#" >تصميمات</a>
 </nav>
+<div class="cards">
 
-<section class="projects1">
-    <div class="body-desgin">
-        <div class="card-desgin">
-
+    <div class="card active" style="--bg: url(images/img-1.jpg)">
+      <div class="shadow"></div> 
+      <div class="label">
+        <div class="icon" style="--color: green">
+          <ion-icon name="sunny"></ion-icon>
         </div>
+        <div class="info">
+          <div class="title">Spring</div>
+          <div>Nature Looks Attractive</div>
+        </div>
+      </div>
     </div>
-</section>
-<div class="area ">
 
+    <div class="card" style="--bg: url(images/img-2.jpg)">
+      <div class="shadow"></div> 
+      <div class="label">
+        <div class="icon" style="--color: blue">
+          <ion-icon name="sparkles"></ion-icon>
+        </div>
+        <div class="info">
+          <div class="title">Summer</div>
+          <div>Summer is a State of Mind</div>
+        </div>
+      </div>
+    </div>
 
-</div>
+    <div class="card" style="--bg: url(images/img-3.jpg)">
+      <div class="shadow"></div> 
+      <div class="label">
+        <div class="icon" style="--color: orange">
+          <ion-icon name="thunderstorm"></ion-icon>
+        </div>
+        <div class="info">
+          <div class="title">Autumn</div>
+          <div>Life Starts All Over Again</div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div class="card" style="--bg: url(images/img-4.jpg)">
+      <div class="shadow"></div> 
+      <div class="label">
+        <div class="icon" style="--color: black">
+          <ion-icon name="snow"></ion-icon>
+        </div>
+        <div class="info">
+          <div class="title">Winter</div>
+          <div>Not a Season, It's Celebration</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+  <script src="script.js"></script>
+
     <script src="js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>

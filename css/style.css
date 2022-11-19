@@ -1,4 +1,7 @@
 @import url(//db.onlinewebfonts.com/c/66108f52b32320faf592153ea557ef07?family=DIN+Next+LT+Arabic);
+:root{
+--cd:cubic-bezier(.05,.61,.41,.95);
+}
 
 *{
     font-family: 'hanimation';
@@ -63,7 +66,7 @@ header span{
 .m1>img:hover{
     box-shadow: inset #000000aa 0 0 50px 0;
 }
-nav{
+#projects-nav{
     background-color: #1D3557;
     display: flex;
     justify-content: center;
@@ -159,10 +162,18 @@ nav a:hover{
 }  */
 
 /* كارت محذوف */
+.body-projects{ 
+    position:absolut;
+    width: 100%;
+    background-color: #1D3557; 
+}
+
 .projects{
     
     width: 100%;
-    height: 600px;
+    height: 100%;
+
+    text-align: center;
     display:grid;
     grid-template-columns: 
     repeat(auto-fit,minmax(150px,1fr)); 
@@ -201,40 +212,108 @@ nav a:hover{
     text-align: center;
 
 }
-.area{
-    width: 100%;
-    height: 500px;
 
-    /* background-color:#000000; */
-}
-
-.body-card3{
-    position: relative;
-    margin-right: 25px;
-    margin: 16px;
-    padding: 20px;
-    width: 100%;
-    height: 340px;
-    background: rgba( 255, 255, 255, 0.35 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 12px );
-    -webkit-backdrop-filter: blur( 12px );
+.card2 img{
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 )
-
 }
 
-/*MODALS IN THE BUTTON CV*/
-.projects1{
+/*MODALS */
+#nav-desgin{
+background-color:f1faee;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 40px;
+    z-index: 999;
     
-    width: 100%;
-    display:grid;
-    grid-template-columns: 
-    repeat(auto-fit,minmax(150px,1fr)); 
-    background-color:rgb(92, 109, 60); 
 }
 .desgin{
-
     background-color:rgb(255, 255, 255);
-
 }
+
+.cards {
+    display: flex;
+    max-width: 800px;
+    width: calc(100% - 100px);
+    height: 400px;
+  }
+  
+  .cards .card .info .title {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .cards .card .label .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    height: 40px;
+    background-color: white;
+    color: var(--color);
+    border-radius: 50%;
+  }
+  
+  .cards .card .label .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    white-space: pre;
+    transition: 1s var(--cb);
+  }
+  
+  .cards .card {
+    position: relative;
+    min-width: 60px;
+    background: var(--bg);
+    overflow: hidden;
+    margin: 5px;
+    background-size: auto 150%;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s var(--cb);
+    border-radius: 30px;
+  }
+  
+  .cards .card .label {
+    display: flex;
+    position: absolute;
+    right: 0;
+    height: 40px;
+    transition: 0.5s var(--cb);
+  }
+  
+  .cards .card.active .label {
+    bottom: 20px;
+    left: 20px;
+  }
+  
+  .cards .card.active {
+    flex-grow: 10000;
+    background-size: auto 100%;
+  }
+  
+  .cards .card:not(.active) .label {
+    bottom: 10px;
+    left: 10px;
+  }
+  
+  .cards .card .shadow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(
+      0, #0004, transparent
+    );
+  }
+  
+  .cards .card.active .info {
+    opacity: 1;
+  }
+  
+  .cards .card:not(.active) .info {
+    opacity: 0;
+  }
