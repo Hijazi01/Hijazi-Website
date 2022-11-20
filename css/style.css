@@ -60,7 +60,7 @@ header span{
 .m1>img{
     margin-top:80px ;
     border-radius: 50%;
-    filter: blur(3px);
+  
     border: 6px white solid;
 }
 .m1>img:hover{
@@ -159,32 +159,6 @@ nav a:hover{
 .icon i:hover{
     opacity: 1;    
     }
-
-
-/* كارت محذوف */
- /* .card{
-    width: 200px;
-    height: 300px;
-    overflow: hidden;
-    position: relative;
-}
-.card>img{
-    position: absolute;
-    z-index:-1;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 200ms;
-
-} */
-
-/* .card p{
-    font-size:larger;
-    background-color: #1d355785;
-    margin-top:260px ;
-    text-align: center;
-}  */
 
 /* كارت محذوف */
 .body-projects{ 
