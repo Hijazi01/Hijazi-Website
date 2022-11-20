@@ -1,7 +1,5 @@
 @import url(//db.onlinewebfonts.com/c/66108f52b32320faf592153ea557ef07?family=DIN+Next+LT+Arabic);
-:root{
---cd:cubic-bezier(.05,.61,.41,.95);
-}
+
 
 *{
     font-family: 'hanimation';
@@ -121,6 +119,7 @@ transition: opacity 200ms;
 }
 nav a:hover::after{
  opacity: 1;
+ 
 }
 nav a:hover{
  color: #E63946; 
@@ -131,7 +130,7 @@ nav a:hover{
 }
 #buttom{
     background-color: #4CaF50; /* Green */
-    margin-top: 300PX;
+    margin-top: 200PX;
     border-radius: 20px;
     color: white;
     padding: 2px 12px;
@@ -193,7 +192,7 @@ nav a:hover{
     width: 100%;
     background-color: #1D3557; 
 }
-
+/*MODALS */
 .projects{
     
     width: 100%;
@@ -222,6 +221,7 @@ nav a:hover{
 .body-card2:hover{
     transform: scale(1.1);
 }
+
 .button-card{
     width: 100%;
     height: 50%;
