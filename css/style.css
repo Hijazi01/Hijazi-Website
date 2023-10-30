@@ -325,6 +325,7 @@ nav a:hover{
     #buttom{
       position: absolute;
       top: 60%;
+      bottom:0;
       
     }
   } */
