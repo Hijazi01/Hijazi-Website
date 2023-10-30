@@ -321,15 +321,10 @@ nav a:hover{
     opacity:0.6;
   }
   
-  @media only screen and (min-width: 600px) {
+  /* @media only screen and (min-width: 600px) {
     #buttom{
       position: absolute;
       top: 60%;
       
     }
-    .m2{
-      position: relative;
-
-    }
-
-  }
+  } */
