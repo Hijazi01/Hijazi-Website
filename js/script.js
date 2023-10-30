@@ -1,4 +1,4 @@
-const iny = document.getElementsByClassName("projects");
-console.log(iny);
+// const iny = document.getElementsByClassName("projects");
+// console.log(iny);
 
-setTimeout(() => {}, );
+// // setTimeout(() => {}, );
